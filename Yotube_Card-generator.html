@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukesh Nath_Youtube generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+       .container {
+        width: 97%;
+        height: 100vh;
+       }
+       .card{
+        display: flex;
+        height: 200px;
+        width: 100%;
+        border: 1px solid gray;
+        border-radius: 7px;
+        padding: 12px 4px 3px 4px;
+        margin-bottom: 20px;
+       }
+       .tumbnail{
+       position: relative;
+        overflow: hidden;
+        padding-right: 4px;
+       }
+       .duration{
+        position: absolute;
+        bottom:25px;
+        right:6px;
+        background-color: rgba(41, 38, 38, 0.7);
+        font-size: 23px;
+        color: white;
+        font-weight: 600;
+        border-radius: 5px;
+        z-index: 2;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <script>
+        function createCard(title,cName,views,daysOld,duration,thumbnail){
+            let viewStr 
+            if (views < 1000) {
+                viewStr = views;
+            }
+            else if (views > 1000000) {
+                viewStr = views / 1000000 + "M";
+            }
+            else {
+                viewStr = views / 1000 + "K";
+            }
+            let html = ` <div class="card">
+           <div class="tumbnail">
+             <img src="${thumbnail}" alt="${title}">
+             <div class="duration">${duration}</div>
+           </div>
+           <div class="title">
+            <h1>${title}</h1>
+            <p>${cName}. ${viewStr} views . ${daysOld}Months Ago</p>
+           </div>
+           </div> `
+           document.querySelector(".container").innerHTML += html;
+        }
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+         createCard("Netflix clone project. Please support 🙏🥺 .","Mukesh nath",9079,5,"33:33","https://i.ytimg.com/vi/jZvr8_0Ufsk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZlsN7lW9ukWm9lcrcVEd1fnGJJg")
+    </script>
+</body>
+</html>
