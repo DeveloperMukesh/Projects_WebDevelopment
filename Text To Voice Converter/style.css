@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,#010758,#490d61);
+}
+.main h1{
+    color: aliceblue;
+    font-size:45px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.main h1 span{
+    color: #ff2963;
+}
+.main textarea{
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    background: #403d84;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    resize: none;
+}
+.main textarea::placeholder{
+    color: #ddd;
+    font-size: 16px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    gap: 20px;
+}
+.row button{
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: flex;
+    align-items: center;
+}
+.row button img{
+    width: 16px;
+    margin-right: 10px;
+}
+.row select{
+    flex:1;
+    color: #fff;
+    background:#403d84 ;
+    height: 50px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    appearance: none;
+    background-image: url("Resources/images/dropdown.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px) ;
+    background-position-y:20px ;
+    background-size: 15px;
+}
+
